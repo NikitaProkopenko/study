@@ -1,3 +1,13 @@
-.navViewPort {
-    height: 10vh;
+.top-space {
+    margin-top: 5.5rem;
+}
+
+.track-line {
+    width: .5rem;
+    height: 3rem;
+    margin-right: 50%;
+    margin-left: 50%;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+    background-color: lightgray;
 }
