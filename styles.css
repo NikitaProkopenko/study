@@ -1,3 +1,4 @@
+/* Basic Styles */
 .top-space {
     margin-top: 5.5rem;
 }
@@ -10,4 +11,30 @@
     margin-bottom: 1rem;
     margin-top: -1rem;
     background-color: lightgray;
+}
+
+/* Tracks Styles */
+.block-margin {
+    margin-bottom: 2rem;
+}
+
+/* These draft styles for cards on the Tracks page*/
+/*
+.card-link {
+    text-decoration: none;
+}
+
+.card-description {
+    margin-bottom: 1rem;
+}
+*/
+
+/* Title Styles */
+.title-block {
+    width: 60%;
+    height: 35%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
 }
