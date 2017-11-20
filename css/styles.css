@@ -18,6 +18,24 @@
     margin-bottom: 2rem;
 }
 
+.card-blocked, .card-blocked .card-text,
+    .card-blocked .card-title {
+    color: gray;
+    background-color: lightgray;
+}
+
+.card-blocked a {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.card-blocked .btn {
+    border-color: gray;
+    color: gray;
+}
+
+
+
 /* These draft styles for cards on the Tracks page*/
 /*
 .card-link {
