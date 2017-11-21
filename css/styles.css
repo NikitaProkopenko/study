@@ -24,11 +24,6 @@
     background-color: lightgray;
 }
 
-.card-blocked a {
-    opacity: 0.5;
-    pointer-events: none;
-}
-
 .card-blocked .btn {
     border-color: gray;
     color: gray;
