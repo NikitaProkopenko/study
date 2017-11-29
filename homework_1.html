@@ -1,7 +1,59 @@
-{% extends "../../../common/layout.twig" %}
+<!doctype html>
+<html lang="en">
+    <head>
+    <title>Study</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-{% block content %}
-    <!-- Track description -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+    <div class="container-fluid">
+        <!-- Navigation -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="index.html">
+                                <img src="" width="30" height="30" class="d-inline-block align-top" alt="" style="background-color: yellow;">
+                            Study
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav justify-content-between w-100">
+                                <div class="d-flex flex-column flex-lg-row">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="learn.html">Learn</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="practice.html">Practice</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Support</a>
+                                    </li>
+                                </div>
+                                <!-- Hidden links for User Account and User Scores -->
+                                <div class="d-none">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tracks 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Library 2</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Content -->
+            <!-- Track description -->
     <div class="container-fluid top-space">
         <div class="row">
             <div class="col-12 col-lg-6">
@@ -33,7 +85,7 @@
                                             <li>События, запланированные в будущем</li>
                                             <li>Некоторые придаточные времени и условия</li>
                                         </ul>
-                                        <a href="../../lessons/lesson_1/lesson_1.html" class="btn btn-outline-success">Больше теории</a>
+                                        <a href="lesson_1.html" class="btn btn-outline-success">Больше теории</a>
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +99,7 @@
                                 <h1 class="display-4">Exercise 1</h1>
                                 <p class="lead">Fill in the gaps</p>
                                 <hr>
-                                <a href="../../lessons/lesson_1/exercise_1.html" class="btn btn-outline-success">Start</a>
+                                <a href="exercise_1.html" class="btn btn-outline-success">Start</a>
                             </div>
                         </div>
                     </div>
@@ -101,7 +153,7 @@
                                 <h1 class="display-4">Exercise 4</h1>
                                 <p class="lead">Translate into English </p>
                                 <hr>
-                                <a href="../../lessons/lesson_1/exercise_4.html" class="btn btn-outline-success">Start</a>
+                                <a href="exercise_4.html" class="btn btn-outline-success">Start</a>
                             </div>
                         </div>
                     </div>
@@ -132,10 +184,18 @@
                             <li>События, запланированные в будущем</li>
                             <li>Некоторые придаточные времени и условия</li>
                         </ul>
-                        <a href="../../lessons/lesson_1/lesson_1.html" class="btn btn-outline-success">Больше теории</a>
+                        <a href="lesson_1.html" class="btn btn-outline-success">Больше теории</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-{% endblock %}
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    </body>
+</html>
