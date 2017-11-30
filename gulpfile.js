@@ -4,10 +4,10 @@ var twig = require('gulp-twig');
 var flatten = require('gulp-flatten');
 
 gulp.task('sass', function() {
-  // place code for your default task here
+  	// place code for your default task here
 	return gulp.src('./node_modules/bootstrap/scss/bootstrap.scss')
 		.pipe(sass().on('error', sass.logError))
-		.pipe(gulp.dest('./css'));
+		.pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('sass:watch', function() {
