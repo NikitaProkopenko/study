@@ -137,13 +137,36 @@
                             <a href="homework_1.html" class="btn btn-outline-dark my-3 w-100">Back</a>
                         </div>
                         <div class="col-lg-4 order-lg-12 d-none d-lg-block text-center">
-                            <button type="submit" class="btn btn-outline-success my-3 w-100">Submit</button>
+                            <button type="submit" class="btn btn-outline-success my-3 w-100" data-toggle="modal" data-target="#urlModal">Submit</button>
                         </div>
                         <div class="col-12 order-1 d-block d-lg-none text-center">
-                            <button type="submit" class="btn btn-outline-success my-3 w-100">Submit</button>
+                            <button type="submit" class="btn btn-outline-success my-3 w-100" data-toggle="modal" data-target="#urlModal">Submit</button>
                         </div>
                     </div>
                 </form>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="urlModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="urlModalLabel">Send this URL to your teacher</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="urlTextArea">Generated URL with your answers</label>
+                            <textarea class="form-control" id="urlTextArea" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-success">Copy URL</button>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

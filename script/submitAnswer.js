@@ -7,6 +7,7 @@ function submitAnswer(event) {
 	console.log(url);
 	var result = url + "?" + str;
 	console.log(result);
+	$("#urlTextArea").val(result);
 }
 $("form").on("submit", submitAnswer);
 
