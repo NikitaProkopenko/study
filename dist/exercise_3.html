@@ -71,80 +71,103 @@
                         <li>
                             <div class="form-group">
                                 <label for="question_1">The phone rings.</label>
-                                <input type="text" class="form-control" id="question_1" placeholder="Enter correct form">
+                                <input type="text" class="form-control" id="question_1" name="question_1" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
                                 <label for="question_2">The downloading starts after you click.</label>
-                                <input type="text" class="form-control" id="question_2" placeholder="Enter correct form">
+                                <input type="text" class="form-control" id="question_2" name="question_2" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
                                 <label for="question_3">They call it “Royal With Cheese”.</label>
-                                <input type="text" class="form-control" id="question_3" placeholder="Enter correct form">
+                                <input type="text" class="form-control" id="question_3" name="question_3" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
                                 <label for="question_4">I look like a clown.</label>
-                                <input type="text" class="form-control" id="question_4" placeholder="Enter correct form">
+                                <input type="text" class="form-control" id="question_4" name="question_4" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
                                 <label for="question_5">She insists on painting it beige.</label>
-                                <input type="text" class="form-control" id="question_5" placeholder="Enter correct form">
+                                <input type="text" class="form-control" id="question_5" name="question_5" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
                                 <label for="question_6">Your boots are soaked.</label>
-                                <input type="text" class="form-control" id="question_6" placeholder="Enter correct form">
+                                <input type="text" class="form-control" id="question_6" name="question_6" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
                                 <label for="question_7">His face is very pale.</label>
-                                <input type="text" class="form-control" id="question_7" placeholder="Enter correct form">
+                                <input type="text" class="form-control" id="question_7" name="question_7" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
                                 <label for="question_8">We offend them in every way possible.</label>
-                                <input type="text" class="form-control" id="question_8" placeholder="Enter correct form">
+                                <input type="text" class="form-control" id="question_8" name="question_8" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
                                 <label for="question_9">Your princess is in another castle.</label>
-                                <input type="text" class="form-control" id="question_9" placeholder="Enter correct form">
+                                <input type="text" class="form-control" id="question_9" name="question_9" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
                                 <label for="question_10">I am at the railway station. </label>
-                                <input type="text" class="form-control" id="question_10" placeholder="Enter correct form">
+                                <input type="text" class="form-control" id="question_10" name="question_10" placeholder="Enter correct form">
                             </div>
                         </li>
                     </ol>
+                    <!-- Submit & Back buttons -->
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4 order-lg-1 d-none d-lg-block text-center">
+                            <a href="homework_1.html" class="btn btn-outline-dark my-3 w-100">Back</a>
+                        </div>
+                        <div class="col-12 order-12 d-block d-lg-none text-center">
+                            <a href="homework_1.html" class="btn btn-outline-dark my-3 w-100">Back</a>
+                        </div>
+                        <div class="col-lg-4 order-lg-12 d-none d-lg-block text-center">
+                            <button type="submit" class="btn btn-outline-success my-3 w-100" data-toggle="modal" data-target="#urlModal">Submit</button>
+                        </div>
+                        <div class="col-12 order-1 d-block d-lg-none text-center">
+                            <button type="submit" class="btn btn-outline-success my-3 w-100" data-toggle="modal" data-target="#urlModal">Submit</button>
+                        </div>
+                    </div>
                 </form>
             </div>
-        </div>
-        <!-- Submit & Back buttons -->
-        <div class="row justify-content-around">
-            <div class="col-lg-4 order-lg-1 d-none d-lg-block text-center">
-                <a href="homework_1.html" class="btn btn-outline-dark my-3 w-50">Back</a>
-            </div>
-            <div class="col-12 order-12 d-block d-lg-none text-center">
-                <a href="homework_1.html" class="btn btn-outline-dark my-3 w-100">Back</a>
-            </div>
-            <div class="col-lg-4 order-lg-12 d-none d-lg-block text-center">
-                <a href="#" class="btn btn-outline-success my-3 w-50">Submit</a>
-            </div>
-            <div class="col-12 order-1 d-block d-lg-none text-center">
-                <a href="#" class="btn btn-outline-success my-3 w-100">Submit</a>
+            <!-- Modal -->
+            <div class="modal fade" id="urlModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="urlModalLabel">Send this URL to your teacher</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="urlTextArea">Generated URL with your answers</label>
+                            <textarea class="form-control" id="urlTextArea" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-success">Copy URL</button>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -155,5 +178,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="script/submitAnswer.js"></script>
     </body>
 </html>
