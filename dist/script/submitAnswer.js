@@ -1,33 +1,34 @@
 console.log(window.location.href);
 function submitAnswer(event) {
 	event.preventDefault();
+	//take a data from the form
 	var str = $("form").serialize();
-	console.log($(this).serialize());
+	//encode special characters like: , / ? : @ & = + $ #
+	var res = encodeURIComponent(str);
+	//take url of a lesson
 	var url = window.location.href;
-	console.log(url);
 	var result = url + "?" + str;
-	console.log(result);
+	//paste the url with answers to the textarea in the modal window
 	$("#urlTextArea").val(result);
 }
 $("form").on("submit", submitAnswer);
 
 function parseUrl() {
+	//take a url
 	var url = window.location.href;
+	//split url and encoded answers
 	var arr = url.split("?");
-	console.log(arr);
-	var answerArr = arr[1].split("&");
-	console.log(answerArr);
-
+	//decode answers
+	var answerArr = decodeURIComponent(arr[1]).split("&");
+	//insert answers to the array like key->value
 	var answerKeyValue = [];
 	for (var i = 0; i < answerArr.length; i++) {
 		var key = answerArr[i].split("=");
 		answerKeyValue.push(key);
 	}
-	console.log(answerKeyValue);
-
+	//insert answers to the form inputs
 	for (var x = 0; x < answerKeyValue.length; x++) {
 		var text = answerKeyValue[x][1];
-		console.log(text);
 		$("#" + answerKeyValue[x][0]).val(text);
 	}
 }
