@@ -1,0 +1,121 @@
+{% extends "../../../common/layout.twig" %}
+
+{% block content %}
+    <!-- Exercise 1 Content -->
+    <div class="container-fluid top-space">
+        <!-- Title & Description -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <h1 class="display-4">Exercise 1</h1>
+                <p class="lead">Put the verb into the correct form</p>
+            </div>
+        </div>
+        <!-- Exercise content -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <form>
+                    <ol>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_1">She (make) sandwiches in the kitchen.</label>
+                                <input type="text" class="form-control" id="question_1" name="question_1" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_2">John (arrive) later in the evening.</label>
+                                <input type="text" class="form-control" id="question_2" name="question_2" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_3">They (travel) somewhere in France now.</label>
+                                <input type="text" class="form-control" id="question_3" name="question_3" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_4">I (cover) for her tomorrow.</label>
+                                <input type="text" class="form-control" id="question_4" name="question_4" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_5">(he/paint) his house?</label>
+                                <input type="text" class="form-control" id="question_5" name="question_5" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_6">You (always/give) me a flat tire.</label>
+                                <input type="text" class="form-control" id="question_6" name="question_6" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_7">It (raise) suspicions.</label>
+                                <input type="text" class="form-control" id="question_7" name="question_7" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_8">It (take) too long!</label>
+                                <input type="text" class="form-control" id="question_8" name="question_8" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_9">We (count) on you.</label>
+                                <input type="text" class="form-control" id="question_9" name="question_9" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_10">(I/drill) the right wall?</label>
+                                <input type="text" class="form-control" id="question_10" name="question_10" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                    </ol>
+                    <!-- Submit & Back buttons -->
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4 order-lg-1 d-none d-lg-block text-center">
+                            <a href="homework_2.html" class="btn btn-outline-dark my-3 w-100">Back</a>
+                        </div>
+                        <div class="col-12 order-12 d-block d-lg-none text-center">
+                            <a href="homework_2.html" class="btn btn-outline-dark my-3 w-100">Back</a>
+                        </div>
+                        <div class="col-lg-4 order-lg-12 d-none d-lg-block text-center">
+                            <button type="submit" class="btn btn-outline-success my-3 w-100" data-toggle="modal" data-target="#urlModal">Submit</button>
+                        </div>
+                        <div class="col-12 order-1 d-block d-lg-none text-center">
+                            <button type="submit" class="btn btn-outline-success my-3 w-100" data-toggle="modal" data-target="#urlModal">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="urlModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="urlModalLabel">Send this URL to your teacher</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="urlTextArea">Generated URL with your answers</label>
+                            <textarea class="form-control" id="urlTextArea" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-success">Copy URL</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
