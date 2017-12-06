@@ -1,13 +1,65 @@
-{% extends "../../../common/layout.twig" %}
+<!doctype html>
+<html lang="en">
+    <head>
+    <title>Study</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-{% block content %}
-    <!-- Exercise 1 Content -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+    <div class="container-fluid">
+        <!-- Navigation -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="index.html">
+                                <img src="" width="30" height="30" class="d-inline-block align-top" alt="" style="background-color: yellow;">
+                            Study
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav justify-content-between w-100">
+                                <div class="d-flex flex-column flex-lg-row">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="learn.html">Learn</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="practice.html">Practice</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Support</a>
+                                    </li>
+                                </div>
+                                <!-- Hidden links for User Account and User Scores -->
+                                <div class="d-none">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tracks 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Library 2</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Content -->
+            <!-- Exercise 3 Content -->
     <div class="container-fluid top-space">
         <!-- Title & Description -->
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
-                <h1 class="display-4">Exercise 1</h1>
-                <p class="lead">Put the verb into the correct form:</p>
+                <h1 class="display-4">Exercise 3</h1>
+                <p class="lead">Compose questions:</p>
             </div>
         </div>
         <!-- Exercise content -->
@@ -17,62 +69,56 @@
                     <ol>
                         <li>
                             <div class="form-group">
-                                <label for="question_1">She (make) sandwiches in the kitchen.</label>
+                                <label for="question_1">Walls are closing in.</label>
                                 <input type="text" class="form-control" id="question_1" name="question_1" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
-                                <label for="question_2">John (arrive) later in the evening.</label>
+                                <label for="question_2">I am living in a different place now.</label>
                                 <input type="text" class="form-control" id="question_2" name="question_2" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
-                                <label for="question_3">They (travel) somewhere in France now.</label>
+                                <label for="question_3">Brad is reading an article.</label>
                                 <input type="text" class="form-control" id="question_3" name="question_3" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
-                                <label for="question_4">I (cover) for her tomorrow.</label>
+                                <label for="question_4">We are becoming stronger.</label>
                                 <input type="text" class="form-control" id="question_4" name="question_4" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
-                                <label for="question_5">(he/paint) his house?</label>
+                                <label for="question_5">Sheila is constantly whining about her code not compiling.</label>
                                 <input type="text" class="form-control" id="question_5" name="question_5" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
-                                <label for="question_6">You (always/give) me a flat tire.</label>
+                                <label for="question_6">I am contacting the snitch on Thursday.</label>
                                 <input type="text" class="form-control" id="question_6" name="question_6" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
-                                <label for="question_7">It (raise) suspicions.</label>
+                                <label for="question_7">The girl is pressing her cheek against her ankle.</label>
                                 <input type="text" class="form-control" id="question_7" name="question_7" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
-                                <label for="question_8">It (take) too long!</label>
+                                <label for="question_8">The screen is glowing mysteriously in the dark.</label>
                                 <input type="text" class="form-control" id="question_8" name="question_8" placeholder="Enter correct form">
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
-                                <label for="question_9">We (count) on you.</label>
+                                <label for="question_9">The money is disappearing mysteriously out of my wallet.</label>
                                 <input type="text" class="form-control" id="question_9" name="question_9" placeholder="Enter correct form">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="form-group">
-                                <label for="question_10">(I/drill) the right wall?</label>
-                                <input type="text" class="form-control" id="question_10" name="question_10" placeholder="Enter correct form">
                             </div>
                         </li>
                     </ol>
@@ -118,4 +164,13 @@
             </div>
         </div>
     </div>
-{% endblock %}
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="script/submitAnswer.js"></script>
+    </body>
+</html>
