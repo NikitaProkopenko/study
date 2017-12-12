@@ -40,5 +40,9 @@ function copy() {
 	copyText.select();
 	document.execCommand("Copy");
   }
-
-  document.querySelector("#copyButton").addEventListener("click", copy);
+//close modal after when link copied
+function closeModal() {
+	$('#urlModal').modal('hide');
+}
+document.querySelector("#copyButton").addEventListener("click", copy);
+document.querySelector("#copyButton").addEventListener("click", closeModal);
