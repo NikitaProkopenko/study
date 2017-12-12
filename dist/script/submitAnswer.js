@@ -33,3 +33,12 @@ function parseUrl() {
 	}
 }
 parseUrl();
+
+//copy link when user press copyButton
+function copy() {
+	var copyText = document.querySelector("#urlTextArea");
+	copyText.select();
+	document.execCommand("Copy");
+  }
+
+  document.querySelector("#copyButton").addEventListener("click", copy);
