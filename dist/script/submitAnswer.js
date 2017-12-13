@@ -33,3 +33,16 @@ function parseUrl() {
 	}
 }
 parseUrl();
+
+//copy link when user press copyButton
+function copy() {
+	var copyText = document.querySelector("#urlTextArea");
+	copyText.select();
+	document.execCommand("Copy");
+  }
+//close modal after when link copied
+function closeModal() {
+	$('#urlModal').modal('hide');
+}
+document.querySelector("#copyButton").addEventListener("click", copy);
+document.querySelector("#copyButton").addEventListener("click", closeModal);
