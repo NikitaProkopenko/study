@@ -1,4 +1,16 @@
 /* Basic Styles */
+body {
+    background: rgb(245, 245, 245);
+}
+
+hr {
+    border-top: 1px solid #28a745;
+}
+
+.fill-viewport {
+    min-height: 100vh;
+}
+
 .top-space {
     margin-top: 5.5rem;
 }
@@ -16,6 +28,10 @@
 /* Tracks Styles */
 .block-margin {
     margin-bottom: 2rem;
+}
+
+.card-size {
+    height: 5rem;
 }
 
 .card-blocked, .card-blocked .card-text,
