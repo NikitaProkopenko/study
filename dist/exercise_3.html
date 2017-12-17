@@ -16,9 +16,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
                         <a class="navbar-brand" href="index.html">
-                                <img src="" width="30" height="30" class="d-inline-block align-top" alt="" style="background-color: yellow;">
                             Study
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,12 +27,13 @@
                             <ul class="navbar-nav justify-content-between w-100">
                                 <div class="d-flex flex-column flex-lg-row">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="learn.html">Learn</a>
+                                        <a class="nav-link" href="learn.html">Теория</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="practice.html">Practice</a>
+                                        <a class="nav-link" href="practice.html">Практика</a>
                                     </li>
-                                    <li class="nav-item">
+                                    
+                                    <li class="nav-item d-none">
                                         <a class="nav-link" href="#">Support</a>
                                     </li>
                                 </div>
@@ -58,9 +58,10 @@
         <!-- Title & Description -->
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
-                <h1 class="display-4">Exercise 3</h1>
+                <h1 class="display-4">Упражнение 3</h1>
+                <hr>
                 <p class="lead">Compose questions out of the sentences:</p>
-                <p>Ex: I like cats – Do I like cats?</p>
+                <p><strong>Ex: I like cats – Do I like cats?</strong></p>
             </div>
         </div>
         <!-- Exercise content -->
@@ -132,16 +133,16 @@
                     <!-- Submit & Back buttons -->
                     <div class="row justify-content-between">
                         <div class="col-lg-4 order-lg-1 d-none d-lg-block text-center">
-                            <a href="homework_1.html" class="btn btn-outline-dark my-3 w-100">Back</a>
+                            <a href="homework_1.html" class="btn btn-block btn-outline-dark py-3 my-4">Назад</a>
                         </div>
                         <div class="col-12 order-12 d-block d-lg-none text-center">
-                            <a href="homework_1.html" class="btn btn-outline-dark my-3 w-100">Back</a>
+                            <a href="homework_1.html" class="btn btn-block btn-outline-dark py-3 my-4">Назад</a>
                         </div>
                         <div class="col-lg-4 order-lg-12 d-none d-lg-block text-center">
-                            <button type="submit" class="btn btn-outline-success my-3 w-100" data-toggle="modal" data-target="#urlModal">Submit</button>
+                            <button type="submit" class="btn btn-block btn-outline-success py-3 my-4" data-toggle="modal" data-target="#urlModal">Сдать</button>
                         </div>
                         <div class="col-12 order-1 d-block d-lg-none text-center">
-                            <button type="submit" class="btn btn-outline-success my-3 w-100" data-toggle="modal" data-target="#urlModal">Submit</button>
+                            <button type="submit" class="btn btn-block btn-outline-success py-3 my-4" data-toggle="modal" data-target="#urlModal">Сдать</button>
                         </div>
                     </div>
                 </form>
@@ -151,20 +152,20 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="urlModalLabel">Send this URL to your teacher</h5>
+                <h5 class="modal-title" id="urlModalLabel">Поделись этой ссылкой с преподавателем</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
         <div class="modal-body">
             <div class="form-group">
-                <label for="urlTextArea">Generated URL with your answers</label>
+
                 <textarea class="form-control" id="urlTextArea" rows="3"></textarea>
             </div>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-outline-success" id="copyButton">Copy URL</button>
+            <button type="button" class="btn btn-block btn-secondary py-3 my-3" data-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-block btn-outline-success py-3 my-3" id="copyButton">Копировать</button>
         </div>
         </div>
     </div>

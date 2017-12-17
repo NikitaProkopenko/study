@@ -1,13 +1,26 @@
 {% extends "../common/layout.twig" %}
 
 {% block content %}
-    <div class="container-fluid title-block text-center">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="display-3">Study</h1>
-                <hr class="d-none d-lg-block">
-                <p class="lead">Learn, Practice, Be Better</p>
-                <a class="btn btn-success btn-lg" href="learn.html" role="button">Explore</a>
+    <div class="container-fluid">
+        <div class="row fill-100-viewport align-items-center justify-content-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 text-center">Как это работает</h1>
+                <hr>
+                <ul class="lead list-unstyled text-center">
+                    <li class="py-1">Изучи теорию</li>
+                    <li class="py-1">Выполни практические задания</li>
+                    <li class="py-1">Поделись результатом со своим преподавателем</li>
+                    <li class="py-1">Стань ниндзя</li>
+                </ul>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-12 col-md-6 my-3 w-100">
+                        <a class="btn btn-block btn-outline-success py-3" href="learn.html" role="button">Вперед к теории</a>
+                    </div>
+                    <div class="col-12 col-md-6 my-3 w-100">
+                        <a class="btn btn-block btn-outline-success py-3" href="practice.html" role="button">Сразу к практике</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
