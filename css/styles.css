@@ -7,7 +7,7 @@ hr {
     border-top: 1px solid #28a745;
 }
 
-.fill-viewport {
+.fill-100-viewport {
     min-height: 100vh;
 }
 
@@ -21,8 +21,8 @@ hr {
     margin-right: 50%;
     margin-left: 50%;
     margin-bottom: 1rem;
-    margin-top: -1rem;
-    background-color: lightgray;
+    margin-top: 1rem;
+    background-color: white;
 }
 
 /* Tracks Styles */
