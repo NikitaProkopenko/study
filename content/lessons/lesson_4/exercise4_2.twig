@@ -1,0 +1,108 @@
+{% extends "../../../common/layout.twig" %}
+
+{% block content %}
+    <!-- Exercise 1 Content -->
+    <div class="container-fluid top-space">
+        <!-- Title & Description -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <h1 class="display-4">Упражнение 2</h1>
+                <hr>
+                <p class="lead">Fill in the blanks with the Past Simple of the verbs in brackets:</p>
+                <p>Ex: I <strong>(meet)</strong> him yesterday -  I met him yesterday.</p>
+            </div>
+        </div>
+        <!-- Exercise content -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <form>
+                    <ol>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_1">When I <strong>(switch)</strong> to backend I <strong>(find)</strong> everything very different.</label>
+                                <input type="text" class="form-control" id="question_1" name="question_1" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_2">Two years ago I <strong>(graduate)</strong> from the university.</label>
+                                <input type="text" class="form-control" id="question_2" name="question_2" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_3">Last summer Vova <strong>(spend)</strong> his holidays learning programming. He <strong>(watch)</strong> tutorials, he <strong>(solve)</strong> tasks, and he <strong>(consult)</strong> with his programmer friend</label>
+                                <input type="text" class="form-control" id="question_3" name="question_3" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_4">My brother <strong>(get)</strong> a good job at a development studio.</label>
+                                <input type="text" class="form-control" id="question_4" name="question_4" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_5">Sergey and his cousins <strong>(come)</strong> to the US ten years ago.</label>
+                                <input type="text" class="form-control" id="question_5" name="question_5" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_6">Liza <strong>(call)</strong> the PM at midnight. </label>
+                                <input type="text" class="form-control" id="question_6" name="question_6" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_7">Fred <strong>(begin)</strong> his new enterprise last year.</label>
+                                <input type="text" class="form-control" id="question_7" name="question_7" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_8">Dima <strong>(write)</strong> the code and Tanya <strong>(review)</strong> it.</label>
+                                <input type="text" class="form-control" id="question_8" name="question_8" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_9">Bob <strong>(rent)</strong> a small flat in Saint-Petersburg.</label>
+                                <input type="text" class="form-control" id="question_9" name="question_9" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_10">The two friends <strong>(invent)</strong> a new method of making coffee.</label>
+                                <input type="text" class="form-control" id="question_10" name="question_10" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="question_11">The culprit <strong>(hide)</strong> a backdoor in the code and <strong>(leak)</strong> the customer DB to the competitors.</label>
+                                <input type="text" class="form-control" id="question_11" name="question_11" placeholder="Enter correct form">
+                            </div>
+                        </li>
+                    </ol>
+                    <!-- Submit & Back buttons -->
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4 order-lg-1 d-none d-lg-block text-center">
+                            <a href="homework_4.html" class="btn btn-block btn-outline-dark py-3 my-4">Назад</a>
+                        </div>
+                        <div class="col-12 order-12 d-block d-lg-none text-center">
+                            <a href="homework_4.html" class="btn btn-block btn-outline-dark py-3 my-4">Назад</a>
+                        </div>
+                        <div class="col-lg-4 order-lg-12 d-none d-lg-block text-center">
+                            <button type="submit" class="btn btn-block btn-outline-success py-3 my-4" data-toggle="modal" data-target="#urlModal">Сдать</button>
+                        </div>
+                        <div class="col-12 order-1 d-block d-lg-none text-center">
+                            <button type="submit" class="btn btn-block btn-outline-success py-3 my-4" data-toggle="modal" data-target="#urlModal">Сдать</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Modal -->
+            {% include "../../../common/modal.twig" %}
+        </div>
+    </div>
+{% endblock %}
