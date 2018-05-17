@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/NikitaProkopenko/study#readme",
   "dependencies": {
-    "bootstrap": "^4.0.0-beta.2"
+    "bootstrap": "^4.0.0-beta.2",
+    "hoek": "^5.0.3"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
